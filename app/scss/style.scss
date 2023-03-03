@@ -74,16 +74,6 @@
   text-align: center;
 }
 
-// .header__btn {
-//   background-color: $yellow;
-//   transition: all .5s;
-//   &:hover {
-//     background-color: $black;
-//     color: $white;
-//     border: 2px solid $yellow;
-//   }
-// }
-
 .header__item-text {
   @extend %Regular;
   display: block;
@@ -214,7 +204,7 @@
   font-size: 30px;
   line-height: 36px;
   transition: all .3s;
-  color: $black;
+  color: $text;
 
   &+.price__tab {
     margin-left: 70px;
@@ -227,7 +217,7 @@
 
 .tab--active {
   background-color: $yellow !important;
-  border-color: $black;
+  color: $text;
 }
 
 .services__inner {
@@ -273,21 +263,21 @@
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 15px;
-  color: $black;
+  color: $text;
 }
 
 .services__box-descr {
   @extend %Roboto;
   font-size: 20px;
   line-height: 23px;
-  color: $black;
+  color: $text;
   margin: 0 auto;
   padding-bottom: 50px;
 }
 
 .services__box-price {
   @extend %Bold;
-  color: $black;
+  color: $text;
   font-size: 30px;
   line-height: 36px;
   max-width: 314px;
@@ -297,10 +287,172 @@
   border-top: 2px solid $yellow;
 }
 
+.services__btn-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.services__btn {
+  background-color: $black;
+  transition: all .5s;
+  border: 2px solid transition;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+    color: $black;
+
+
+  }
+}
+
 // end section services
 
+// start section adv
+.adv {
+  background-color: $yellow;
+}
 
+.adv__title {
+  margin-bottom: 0;
+}
 
+.adv__subtitle {
+  color: $text;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.adv__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px
+}
+
+.adv__item {
+  max-width: 675px;
+  width: 100%;
+  padding: 10px;
+  background-color: $black;
+  color: $white;
+  border-radius: 5px;
+}
+
+.adv__item-wrapper {
+  border: 1px dashed $white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.adv__item-wrapper--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adv__item-title {
+  @extend %Bold;
+  color: $white;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.adv__item-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.adv__item-text {
+  @extend %Regular;
+  color: $white;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 11px;
+}
+
+// end section adv
+
+// start section contacts
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.contacts__left {
+  width: 637px;
+}
+
+.contacts__left-title {
+  // margin-left: 0;
+  text-align: left;
+}
+
+.contacts__left-title--distinctive {
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 71px;
+    height: 71px;
+    background-color: $yellow;
+    border-radius: 50%;
+    z-index: -1;
+    left: -9px;
+    top: 5px;
+  }
+}
+
+.contacts__left-subtitle {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 36px;
+  color: $text;
+}
+
+.contacts__left-item {
+  border-bottom: 2px solid #FFD338;
+  margin-bottom: 30px;
+  @extend %Regular;
+  color: $text;
+  padding-bottom: 5px;
+}
+
+.contacts__left-item--distinctive {
+  @extend %Bold;
+  padding-left: 10px;
+}
+
+.contacts__left-item--text {
+  width: 575px;
+}
+
+.contacts__left-item--phone {
+  width: 525px;
+}
+
+.contacts__left-item--email {
+  width: 475px;
+}
+
+.contacts__btn {
+  margin-top: 20px;
+}
+
+.contacts__right {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+// end section contacts
 
 
 
