@@ -31,7 +31,7 @@
   font-size: 24px;
   line-height: 29px;
   text-align: right;
-  max-width: 200px;
+  max-width: 210px;
   width: 100%;
   height: fit-content;
   transition: all .5s;
@@ -454,7 +454,62 @@
 
 // end section contacts
 
+// start section footer
+.footer {
+  background-color: $black;
+  // clip-path: ellipse(70% 120px at 50% 82%);
+  clip-path: ellipse(85% 220px at 50% 122%);
+  // padding-bottom: 80px;
+  // height: 300px;
+}
 
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 15px 0;
+}
+
+.footer__item {
+  @extend %Regular;
+  font-size: 24px;
+  line-height: 28px;
+  color: $white;
+  // margin-top: 30px;
+  max-width: 220px;
+  width: 100%;
+}
+
+.footer__item-text--distinctive {
+  @extend %Bold;
+  padding-right: 5px;
+}
+.footer__item--left{
+  text-align: left;
+}
+.footer__item--right{
+  text-align: right;
+}
+.footer__item-text-prof{
+  font-size: 16px;
+  line-height: 18px;
+ 
+}
+.footer__item-link{
+    font-size: 16px;
+    line-height: 18px;
+    transition: all .3s;
+    color: $white;
+    &:hover{
+      color: $yellow;
+    }
+}
+.footer__link-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+// end section footer
 
 
 

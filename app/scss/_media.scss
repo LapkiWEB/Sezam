@@ -203,7 +203,8 @@
   }
 
   .header__phone {
-    max-width: 158px;
+    max-width: 189px;
+    justify-content: flex-start;
   }
 
   .header__item-wrapper {
@@ -267,11 +268,13 @@
     justify-content: center;
     align-items: inherit;
   }
-  .contacts__left-title--distinctive::before{
+
+  .contacts__left-title--distinctive::before {
     left: -7px;
     width: 48px;
     height: 48px;
   }
+
   .contacts__left-item--text {
     width: 100%;
   }
@@ -288,6 +291,14 @@
     margin: 0 auto;
     text-align: center;
   }
+  .footer__item--left{
+    .footer__item-text--distinctive{
+      display: block;
+    }
+  }
+  .footer__item{
+    max-width: 175px;
+  }
 }
 
 @media(max-width: 800px) {
@@ -297,6 +308,17 @@
 
   .global-btn {
     padding: 8px 22px;
+  }
+  .header__item{
+    max-width: 189px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .header__phone {
+    // max-width: 150px;
+    // justify-content: flex-start;
   }
 
   .screen__left-btn--text {
@@ -345,6 +367,28 @@
   .services__box-price {
     font-size: 20px;
     line-height: 36px;
+  }
+  .footer{
+    clip-path: ellipse(110% 237px at 50% 121%);
+  }
+  .footer__inner{
+    gap: 20px;
+  }
+  .footer__item{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer__link-wrapper{
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer__item-link{
+    display: block;
+    width: 100%;
+  }
+  .footer__item-link-politcs{
+    margin-bottom: 15px;
   }
 }
 
@@ -449,14 +493,22 @@
     line-height: 36px;
     margin-bottom: 15px;
   }
-  .contacts__left-title{
+
+  .contacts__left-title {
     text-align: center;
   }
-    .contacts__left-title--distinctive::before {
-      left: -6px;
-      width: 38px;
-      height: 38px;
-    }
+
+  .contacts__left-title--distinctive::before {
+    left: -6px;
+    width: 38px;
+    height: 38px;
+  }
+  .footer__inner{
+    justify-content: center;
+  }
+  .footer__item{
+    display: none;
+  }
 }
 
 @media(max-width: 400px) {

@@ -1,11 +1,11 @@
-.contacts__left-item, .adv__item-text, .header__item-text, .header__phone-text, html,
+.footer__item, .contacts__left-item, .adv__item-text, .header__item-text, .header__phone-text, html,
 body {
   font-family: "Phenomena-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.contacts__left-item--distinctive, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
+.footer__item-text--distinctive, .contacts__left-item--distinctive, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
   font-family: "Phenomena-Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -220,7 +220,7 @@ section {
   font-size: 24px;
   line-height: 29px;
   text-align: right;
-  max-width: 200px;
+  max-width: 210px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -633,6 +633,72 @@ section {
   width: 100%;
 }
 
+.footer {
+  background-color: #262626;
+  -webkit-clip-path: ellipse(85% 220px at 50% 122%);
+          clip-path: ellipse(85% 220px at 50% 122%);
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0 15px 0;
+}
+
+.footer__item {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 220px;
+  width: 100%;
+}
+
+.footer__item-text--distinctive {
+  padding-right: 5px;
+}
+
+.footer__item--left {
+  text-align: left;
+}
+
+.footer__item--right {
+  text-align: right;
+}
+
+.footer__item-text-prof {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer__item-link {
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+}
+.footer__item-link:hover {
+  color: #FFD338;
+}
+
+.footer__link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1600px) {
   .screen__title {
     font-size: 70px;
@@ -807,7 +873,10 @@ section {
     padding: 15px 0 37px 0;
   }
   .header__phone {
-    max-width: 158px;
+    max-width: 189px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header__item-wrapper {
     padding-top: 8px;
@@ -880,6 +949,12 @@ section {
     margin: 0 auto;
     text-align: center;
   }
+  .footer__item--left .footer__item-text--distinctive {
+    display: block;
+  }
+  .footer__item {
+    max-width: 175px;
+  }
 }
 @media (max-width: 800px) {
   .container {
@@ -887,6 +962,18 @@ section {
   }
   .global-btn {
     padding: 8px 22px;
+  }
+  .header__item {
+    max-width: 189px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .screen__left-btn--text {
     margin-left: 26px;
@@ -923,6 +1010,32 @@ section {
   .services__box-price {
     font-size: 20px;
     line-height: 36px;
+  }
+  .footer {
+    -webkit-clip-path: ellipse(110% 237px at 50% 121%);
+            clip-path: ellipse(110% 237px at 50% 121%);
+  }
+  .footer__inner {
+    gap: 20px;
+  }
+  .footer__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer__link-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer__item-link {
+    display: block;
+    width: 100%;
+  }
+  .footer__item-link-politcs {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 600px) {
@@ -1016,6 +1129,14 @@ section {
     left: -6px;
     width: 38px;
     height: 38px;
+  }
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__item {
+    display: none;
   }
 }
 @media (max-width: 400px) {
