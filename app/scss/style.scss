@@ -9,6 +9,7 @@
   width: 100%;
   clip-path: ellipse(60% 93px at 50% 30%);
   position: fixed;
+  z-index: 100;
 }
 
 .header__inner {
@@ -97,11 +98,10 @@
 // start section screen
 .screen {
   background-color: $yellow;
-  height: 800px;
 }
 
 .screen__wrapper {
-  padding-top: 200px;
+  padding-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,13 +112,15 @@
   // width: 100%;
   // width: 55.5%;
   width: 888px;
- 
+
 
 }
-.screen__left-toptext{
+
+.screen__left-toptext {
   font-size: 30px;
   line-height: 50px;
 }
+
 .screen__title {
   @extend %Bold;
   // font-size: 82px;
@@ -127,7 +129,7 @@
   font-size: 85px;
   line-height: 102px;
   margin-bottom: 15px;
- 
+
 }
 
 .screen__left-downtext {
@@ -180,7 +182,122 @@
 
 
 
+// start section services
 
+
+.tab--active {
+  color: #473332;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content--active {
+  display: block;
+}
+
+.tabs-wrapper {
+  max-width: 806px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.price__tab {
+  padding: 7px 20px;
+  border: 2px solid $yellow;
+  border-radius: 5px;
+  background-color: $white;
+  @extend %Bold;
+  font-size: 30px;
+  line-height: 36px;
+  transition: all .3s;
+  color: $black;
+
+  &+.price__tab {
+    margin-left: 70px;
+  }
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+.tab--active {
+  background-color: $yellow !important;
+  border-color: $black;
+}
+
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services__item {
+  text-align: center;
+  width: 450px;
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.services__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+
+}
+
+.services__item-wrapper {
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.services__item-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.services__box-title {
+  @extend %Bold;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 15px;
+  color: $black;
+}
+
+.services__box-descr {
+  @extend %Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.services__box-price {
+  @extend %Bold;
+  color: $black;
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 314px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid $yellow;
+}
+
+// end section services
 
 
 
