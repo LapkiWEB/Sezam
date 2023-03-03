@@ -5,7 +5,7 @@ body {
   font-style: normal;
 }
 
-.header__phone {
+.header__btn, .header__phone {
   font-family: "Phenomena-Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -102,9 +102,9 @@ body {
 }
 
 .container {
-  max-width: 1465px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 160px;
 }
 
 .logo {
@@ -141,6 +141,7 @@ body {
   width: 100%;
   -webkit-clip-path: ellipse(60% 93px at 50% 30%);
           clip-path: ellipse(60% 93px at 50% 30%);
+  position: fixed;
 }
 
 .header__inner {
@@ -150,21 +151,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   padding: 22px 0px 50px 0px;
-}
-
-.header__phone-icon {
-  max-width: 50px;
-  width: 100%;
-  max-height: 50px;
-  height: 100%;
 }
 
 .header__item-wrapper {
   margin-left: 15px;
+  padding-top: 10px;
 }
 
 .header__phone {
@@ -177,6 +172,41 @@ body {
   font-size: 24px;
   line-height: 29px;
   text-align: right;
+  max-width: 200px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__phone path {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__phone:hover .header__phone-icon {
+  background-color: #262626;
+}
+.header__phone:hover path {
+  fill: #FFD338;
+}
+
+.header__phone-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #FFD338;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__phone-text {
@@ -186,7 +216,9 @@ body {
 }
 
 .header__item {
-  max-width: 220px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   width: 100%;
 }
 
@@ -207,4 +239,82 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 152px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 100px;
+  }
+  .logo {
+    max-width: 128px;
+    height: 62px;
+  }
+  .global-btn {
+    padding: 8px 53px;
+  }
+  .header {
+    -webkit-clip-path: ellipse(66% 82px at 50% 30%);
+            clip-path: ellipse(66% 82px at 50% 30%);
+  }
+  .header__inner {
+    padding: 15px 0 37px 0;
+  }
+  .header__phone {
+    max-width: 158px;
+  }
+  .header__item-wrapper {
+    padding-top: 8px;
+    margin-left: 10px;
+  }
+  .header__item-text,
+  .header__phone-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .header__phone-icon {
+    max-width: 40px;
+    height: 40px;
+  }
+  .header__phone-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header__phone-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header {
+    -webkit-clip-path: ellipse(62% 67px at 50% 30%);
+            clip-path: ellipse(62% 67px at 50% 30%);
+  }
+  .header__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px 0 20px 0;
+  }
+  .header__item,
+  .header__phone {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0 50px;
+  }
 }

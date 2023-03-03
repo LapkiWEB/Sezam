@@ -1,3 +1,91 @@
-// @media(max-width: 1900px){
+@media(max-width: 1200px) {
+  .container {
+    padding: 0 152px;
+  }
+}
 
-// }
+@media(max-width: 1024px) {
+  .container {
+    padding: 0 100px;
+  }
+
+  .logo {
+    max-width: 128px;
+    height: 62px;
+  }
+
+  .global-btn {
+    padding: 8px 53px;
+  }
+
+  .header {
+    clip-path: ellipse(66% 82px at 50% 30%);
+  }
+
+  .header__inner {
+    padding: 15px 0 37px 0;
+  }
+
+  .header__phone {
+    max-width: 158px;
+  }
+
+  .header__item-wrapper {
+    padding-top: 8px;
+    margin-left: 10px;
+  }
+
+  .header__item-text,
+  .header__phone-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .header__phone-icon {
+    max-width: 40px;
+    height: 40px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .header__phone-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media(max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    clip-path: ellipse(62% 67px at 50% 30%);
+  }
+
+  .header__inner {
+    justify-content: center;
+    padding: 15px 0 20px 0;
+  }
+
+  .header__item,
+  .header__phone {
+    display: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    padding: 0 50px;
+  }
+}
