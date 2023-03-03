@@ -16,11 +16,7 @@
   justify-content: space-between;
   align-items: top;
   padding: 22px 0px 50px 0px;
-
-
 }
-
-
 
 .header__item-wrapper {
   margin-left: 15px;
@@ -38,13 +34,16 @@
   width: 100%;
   height: fit-content;
   transition: all .5s;
+
   path {
     transition: all .5s;
   }
+
   &:hover {
     .header__phone-icon {
       background-color: $black;
     }
+
     path {
       fill: $yellow;
     }
@@ -53,25 +52,12 @@
 
 .header__phone-icon {
   width: 50px;
- 
   height: 50px;
-
   border-radius: 50%;
   border: 1px solid $yellow;
   display: flex;
   justify-content: center;
   align-items: center;
-  // transition: all .5s;
-  // path {
-  //   transition: all .5s;
-  // }
-  // &:hover {
-  //   background-color: $black;
-
-  //   path {
-  //     fill: $yellow;
-  //   }
-  // }
 }
 
 .header__phone-text {
@@ -82,23 +68,20 @@
 }
 
 .header__item {
-  // max-width: 220px;
-  // width: 100%;
   max-width: fit-content;
   width: 100%;
+  text-align: center;
 }
 
-.header__btn {
-  background-color: $yellow;
-  transition: all .5s;
-  @extend %Bold;
-
-  &:hover {
-    background-color: $black;
-    color: $white;
-    border: 2px solid $yellow;
-  }
-}
+// .header__btn {
+//   background-color: $yellow;
+//   transition: all .5s;
+//   &:hover {
+//     background-color: $black;
+//     color: $white;
+//     border: 2px solid $yellow;
+//   }
+// }
 
 .header__item-text {
   @extend %Regular;
@@ -109,5 +92,102 @@
 }
 
 // end header
+
+
+// start section screen
+.screen {
+  background-color: $yellow;
+  height: 800px;
+}
+
+.screen__wrapper {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.screen__left {
+  // max-width: 888px;
+  // width: 100%;
+  // width: 55.5%;
+  width: 888px;
+ 
+
+}
+.screen__left-toptext{
+  font-size: 30px;
+  line-height: 50px;
+}
+.screen__title {
+  @extend %Bold;
+  // font-size: 82px;
+  // font-size: calc(85px + 50 * (100vw - 1920px) / 1600);
+  // line-height: calc(102px + 80 * (100vw - 1920px) / 1600);
+  font-size: 85px;
+  line-height: 102px;
+  margin-bottom: 15px;
+ 
+}
+
+.screen__left-downtext {
+  max-width: 457px;
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.screen__left-btn {
+  margin-bottom: 10px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: -400px;
+    width: 284px;
+    height: 200px;
+    background-image: url('../images/icons/screen-arrow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.screen__left-btn--text {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 152px;
+  width: 100%;
+  margin-left: 63px;
+}
+
+
+
+
+
+
+.screen__right {
+  max-width: 547px;
+  // width: 100%;
+  // width: 34%;
+}
+
+// end section screen
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
