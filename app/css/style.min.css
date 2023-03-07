@@ -1,11 +1,11 @@
-.footer__item, .contacts__left-item, .adv__item-text, .header__item-text, .header__phone-text, html,
+.screen__descr-text, .footer__item, .contacts__left-item, .adv__item-text, .header__item-text, .header__phone-text, html,
 body {
   font-family: "Phenomena-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.footer__item-text--distinctive, .contacts__left-item--distinctive, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
+.screen__descr-subtitle, .screen__descr-title, .screen__policy-title, .footer__item-text--distinctive, .contacts__left-item--distinctive, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
   font-family: "Phenomena-Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -361,7 +361,7 @@ section {
 }
 
 .tabs-wrapper {
-  max-width: 806px;
+  max-width: 840px;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -699,6 +699,58 @@ section {
   margin-bottom: 30px;
 }
 
+.screen__policy {
+  background-color: #FFD338;
+}
+
+.screen__policy-title {
+  padding-top: 120px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 85px;
+  line-height: 102px;
+  color: #000;
+}
+
+.screen__descr-title {
+  color: #000;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.screen__descr-subtitle {
+  color: #000;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.screen__descr-text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.screen__error {
+  background-color: #FFD338;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -80px;
+}
+
+.screen__error-title {
+  margin-bottom: 50px;
+}
+
+.screen__error-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (max-width: 1600px) {
   .screen__title {
     font-size: 70px;
@@ -764,6 +816,10 @@ section {
   }
   .contacts__right {
     max-width: 359px;
+  }
+  .screen__policy-title {
+    font-size: 63px;
+    line-height: 70px;
   }
 }
 @media (max-width: 1200px) {
@@ -955,6 +1011,15 @@ section {
   .footer__item {
     max-width: 175px;
   }
+  .screen__policy-title {
+    font-size: 46px;
+    line-height: 55px;
+  }
+  .screen__descr-subtitle,
+  .screen__descr-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 @media (max-width: 800px) {
   .container {
@@ -1068,6 +1133,11 @@ section {
     right: -209px;
     width: 179px;
     height: 126px;
+  }
+  .screen__policy-title {
+    padding-top: 80px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media (max-width: 480px) {
