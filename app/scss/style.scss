@@ -91,7 +91,7 @@
 }
 
 .screen__wrapper {
-  padding-top: 120px;
+  padding-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,14 +105,15 @@
 
 .screen__left-toptext {
   font-size: 30px;
-  line-height: 50px;
+  line-height: 36px;
+  // margin-bottom: 30px;
 }
 
 .screen__title {
   @extend %Bold;
   font-size: 85px;
   line-height: 102px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
 }
 
@@ -146,9 +147,9 @@
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  max-width: 152px;
+  max-width: 160px;
   width: 100%;
-  margin-left: 63px;
+  margin-left: 60px;
 }
 
 
@@ -382,12 +383,14 @@
 
 .contacts__left-title {
   text-align: left;
+  @extend %Bold;
 }
 
 .contacts__left-title--distinctive {
   text-transform: uppercase;
   position: relative;
-
+  display: inline-block;
+// line-height: 48px;
   &::before {
     position: absolute;
     content: '';
@@ -397,7 +400,8 @@
     border-radius: 50%;
     z-index: -1;
     left: -9px;
-    top: 5px;
+    bottom: 0px;
+    top: 0px;
   }
 }
 
@@ -474,39 +478,47 @@
   @extend %Bold;
   padding-right: 5px;
 }
-.footer__item--left{
+
+.footer__item--left {
   text-align: left;
 }
-.footer__item--right{
+
+.footer__item--right {
   text-align: right;
 }
-.footer__item-text-prof{
+
+.footer__item-text-prof {
   font-size: 16px;
   line-height: 18px;
- 
+
 }
-.footer__item-link{
-    font-size: 16px;
-    line-height: 18px;
-    transition: all .3s;
-    color: $white;
-    &:hover{
-      color: $yellow;
-    }
+
+.footer__item-link {
+  font-size: 16px;
+  line-height: 18px;
+  transition: all .3s;
+  color: $white;
+
+  &:hover {
+    color: $yellow;
+  }
 }
-.footer__link-wrapper{
+
+.footer__link-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
+
 // end section footer
 
 // srart str policy
 
-.screen__policy{
+.screen__policy {
   background-color: $yellow;
 }
-.screen__policy-title{
+
+.screen__policy-title {
   padding-top: 120px;
   margin: 0 auto;
   text-align: center;
@@ -515,43 +527,50 @@
   line-height: 102px;
   color: $text;
 }
-.screen__descr-title{
+
+.screen__descr-title {
   color: $text;
   @extend %Bold;
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 15px;
 }
-.screen__descr-subtitle{
-   color: $text;
-   @extend %Bold;
-   font-size: 20px;
-   line-height: 23px;
+
+.screen__descr-subtitle {
+  color: $text;
+  @extend %Bold;
+  font-size: 20px;
+  line-height: 23px;
 }
-.screen__descr-text{
+
+.screen__descr-text {
   @extend %Regular;
   font-size: 20px;
   line-height: 23px;
   color: $text;
   margin-bottom: 15px;
 }
+
 // end str policy
 // start str error
 
-.screen__error{
+.screen__error {
   background-color: $yellow;
   height: 90vh;
   display: flex;
   margin-bottom: -80px;
 }
-.screen__error-title{
+
+.screen__error-title {
   margin-bottom: 50px;
 }
-.screen__error-wrapper{
+
+.screen__error-wrapper {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
+
 // end str error
 
 

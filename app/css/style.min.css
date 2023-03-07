@@ -1,20 +1,23 @@
 .screen__descr-text, .footer__item, .contacts__left-item, .adv__item-text, .header__item-text, .header__phone-text, html,
 body {
   font-family: "Phenomena-Regular", sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: normal;
+  display: swap;
 }
 
-.screen__descr-subtitle, .screen__descr-title, .screen__policy-title, .footer__item-text--distinctive, .contacts__left-item--distinctive, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
+.screen__descr-subtitle, .screen__descr-title, .screen__policy-title, .footer__item-text--distinctive, .contacts__left-item--distinctive, .contacts__left-title, .adv__item-title, .services__box-price, .services__box-title, .price__tab, .screen__title, .header__phone, .title, .global-btn {
   font-family: "Phenomena-Bold", sans-serif;
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 .services__box-descr {
   font-family: "Roboto-Light", sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 html {
@@ -158,7 +161,7 @@ section {
 
 .title {
   font-size: 64px;
-  line-height: 77px;
+  line-height: 66px;
   color: #262626;
   text-align: center;
   margin: 0 auto;
@@ -283,7 +286,7 @@ section {
 }
 
 .screen__wrapper {
-  padding-top: 120px;
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,13 +304,13 @@ section {
 
 .screen__left-toptext {
   font-size: 30px;
-  line-height: 50px;
+  line-height: 36px;
 }
 
 .screen__title {
   font-size: 85px;
   line-height: 102px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .screen__left-downtext {
@@ -339,9 +342,9 @@ section {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  max-width: 152px;
+  max-width: 160px;
   width: 100%;
-  margin-left: 63px;
+  margin-left: 60px;
 }
 
 .screen__right {
@@ -574,6 +577,7 @@ section {
 .contacts__left-title--distinctive {
   text-transform: uppercase;
   position: relative;
+  display: inline-block;
 }
 .contacts__left-title--distinctive::before {
   position: absolute;
@@ -584,7 +588,8 @@ section {
   border-radius: 50%;
   z-index: -1;
   left: -9px;
-  top: 5px;
+  bottom: 0px;
+  top: 0px;
 }
 
 .contacts__left-subtitle {
@@ -787,7 +792,6 @@ section {
   .contacts__left-title--distinctive::before {
     width: 58px;
     height: 58px;
-    top: 2px;
   }
   .contacts__left-subtitle {
     font-size: 24px;
@@ -956,10 +960,10 @@ section {
     line-height: 24px;
   }
   .screen__wrapper {
-    padding-top: 100px;
+    padding-top: 130px;
   }
   .screen__left-btn--text {
-    margin-left: 53px;
+    margin-left: 50px;
   }
   .services__item-wrapper {
     width: 160px;
@@ -1041,7 +1045,7 @@ section {
         flex-wrap: wrap;
   }
   .screen__left-btn--text {
-    margin-left: 26px;
+    margin-left: 23px;
   }
   .adv__inner {
     gap: 15px;
@@ -1122,11 +1126,14 @@ section {
     display: none;
   }
   .screen__wrapper {
-    padding-top: 70px;
+    padding-top: 100px;
   }
   .screen__title {
     font-size: 46px;
     line-height: 56px;
+  }
+  .screen__left-downtext--text {
+    margin-bottom: 15px;
   }
   .screen__left-btn::before {
     bottom: 6px;
@@ -1143,7 +1150,7 @@ section {
 @media (max-width: 480px) {
   .title {
     font-size: 32px;
-    line-height: 38px;
+    line-height: 40px;
   }
   .global-btn {
     font-size: 20px;
@@ -1154,6 +1161,9 @@ section {
     line-height: 24px;
     width: 180px;
   }
+  .screen__wrapper {
+    text-align: center;
+  }
   .screen__title {
     font-size: 36px;
     line-height: 43px;
@@ -1162,12 +1172,14 @@ section {
     margin-bottom: 40px;
   }
   .screen__left-btn::before {
-    right: -156px;
-    width: 135px;
-    height: 94px;
+    display: none;
   }
   .screen__left-btn--text {
-    margin-left: 10px;
+    margin: 0 auto;
+    line-height: 18px;
+  }
+  .screen__left-downtext--text {
+    margin-bottom: 0;
   }
   .tabs-wrapper {
     margin-bottom: 30px;
@@ -1200,6 +1212,13 @@ section {
     width: 38px;
     height: 38px;
   }
+  .contacts__left-item {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+  }
   .footer__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1212,10 +1231,5 @@ section {
 @media (max-width: 400px) {
   .container {
     padding: 0 15px;
-  }
-}
-@media (max-width: 360px) {
-  .screen__left-btn::before {
-    display: none;
   }
 }

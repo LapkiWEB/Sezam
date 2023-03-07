@@ -1,33 +1,23 @@
-// %AnPro-Regular {
-//   font-family: 'AnonymousPro-Regular', sans-serif;
-//   font-weight: normal;
-//   display: swap;
-// }
 
-// %AnPro-Bold {
-//   font-family: 'AnonymousPro-Bold', sans-serif;
-//   font-weight: 700
-// }
-
-// %AlGrey-Bold {
-//   font-family: 'AlegreyaSC-Bold', sans-serif;
-//   font-weight: 700;
-// }
 %Regular {
   font-family: 'Phenomena-Regular', sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: normal;
+  display: swap;
 }
 
 %Bold {
   font-family: 'Phenomena-Bold', sans-serif;
-  font-weight: 700;
+   font-weight: normal;
   font-style: normal;
+  display: swap;
 }
+
 %Roboto {
   font-family: 'Roboto-Light', sans-serif;
-  font-weight: 300;
+   font-weight: normal;
   font-style: normal;
+  display: swap;
 }
 
 $white: #fff;
